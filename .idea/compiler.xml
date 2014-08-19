@@ -27,10 +27,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="NUNTIUS" />
         <module name="REST_TEST" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="NUNTIUS" target="1.6" />
       <module name="REST_TEST" target="1.6" />
     </bytecodeTargetLevel>
   </component>

@@ -4,7 +4,7 @@
   <groupId>com.kubaspatny.nuntius</groupId>
   <artifactId>NUNTIUS</artifactId>
   <packaging>war</packaging>
-  <version>1.0.81</version>
+  <version>1.0.83</version>
   <name>NUNTIUS Maven Webapp</name>
   <url>http://maven.apache.org</url>
 

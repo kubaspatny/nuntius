@@ -29,7 +29,10 @@
     </nav>
 
     <h:form>
-        <h:outputText rendered="#{empty latestMessagesBB.messages}" value="No messages added yet."/>
+
+        <h1>
+            <h:outputText rendered="#{empty latestMessagesBB.messages}" value="No messages added yet."/>
+        </h1>
 
         <h:dataTable rendered="#{not empty latestMessagesBB.messages}"
                      var="msg"

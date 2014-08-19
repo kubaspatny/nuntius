@@ -145,3 +145,9 @@ nav > ul > li:hover > a {
     font-family: 'Dancing Script';
     font-size: 40px;
 }
+
+h1 {
+    font-family: 'Lato';
+    text-align: center;
+    margin-top: 30px;
+}
