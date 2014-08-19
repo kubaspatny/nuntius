@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    text-align:left
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+body {
+    padding: 0px;
+    background: #e5e2e6;
+    background-color: #95a5a6;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0px;
+}
+.flatTable {
+    width: 60%;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-weight: normal;
+    color: #6b6b6b;
+}
+.flatTable tr {
+    height: 50px;
+    background: #d4d1d5;
+    border-bottom: rgba(0,0,0,0.05) 1px solid;
+}
+
+.flatTable td {
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+.flatTable .titleTr {
+    height: 70px;
+    color: #f6f3f7;
+    background: #418a95;
+    border: 0px solid;
+}
+
+
+
+.flatTable .headingTr {
+    height: 30px;
+    background: #63acb7;
+    color: #f6f3f7;
+    font-size: 9pt;
+    border: 0px solid;
+    padding-left: 30px;
+}
+
+.flatTable tr:first-child th {
+    height: 70px;
+    color: #f6f3f7;
+    background: #418a95;
+    border: 0px solid;
+    font-size: 19pt;
+}
+
+.flatTable tr td:first-child {
+    text-align: center;
+}
+
+table th {
+    white-space:nowrap;
+}
+table tr th:last-child {
+    width: 99%
+}
+
+table td {
+    white-space:nowrap;
+}
+
+table tr td:last-child {
+    width: 99%;
+    white-space:normal;
+    padding-right: 30px;
+}
+
+
+
+nav {
+    background-color: #2c3e50;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+nav > ul > li > a {
+    color: #e6e6e6;
+    display: block;
+    line-height: 120px;
+    font-size: 14px;
+    font-family: Lato;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    background-color: #34495e;
+}
+
+nav > ul > li:hover > a {
+    color: #ffffff;
+}
+
+.left {
+    margin-left: 60px;
+    float: left;
+}
+
+.right {
+    margin-right: 60px;
+    float: right;
+}
+
+#logo {
+    font-family: 'Dancing Script';
+    font-size: 40px;
+}
