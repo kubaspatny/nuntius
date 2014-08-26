@@ -3,10 +3,9 @@ package com.kubaspatny.nuntius.rest;
 import com.kubaspatny.nuntius.dto.ShortMessageDto;
 import com.kubaspatny.nuntius.service.IShortMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Author: Kuba Spatny
@@ -91,6 +90,25 @@ public class MessageRestController {
         }
 
         return "200 OK";
+    }
+
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    public ResponseEntity<String> add(@RequestParam(value="message", required=false, defaultValue="") String value) {
+
+        try {
+            if(value != null && shortMessageService != null) {
+
+                if(value.isEmpty()) return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
+
+                shortMessageService.add(value);
+            }
+        } catch (Exception e){
+            System.out.println(e.getLocalizedMessage());
+            return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        return new ResponseEntity<String>(HttpStatus.OK);
+
     }
 
 

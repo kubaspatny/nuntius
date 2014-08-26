@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="NUNTIUS:war exploded">
-    <output-path>$PROJECT_DIR$/target/NUNTIUS-1.0.83</output-path>
+    <output-path>$PROJECT_DIR$/target/NUNTIUS-1.0.92</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="NUNTIUS/web/Web" />
       <element id="directory" name="WEB-INF">
