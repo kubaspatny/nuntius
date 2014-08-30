@@ -10,7 +10,7 @@
     <file path="/index.jsp" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1407953892899" ignored="false" />
     <file path="/pom.xml" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1408443732948" ignored="false" />
     <file path="$USER_HOME$/Documents/SIN - Project3/.idea/workspace.xml" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1407189988821" ignored="false" />
-    <file path="/applicationContext.xml" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1408443870493" ignored="false" />
+    <file path="/applicationContext.xml" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1409428177780" ignored="false" />
     <file path="/AuthService.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1407183959677" ignored="false" />
     <file path="$USER_HOME$/Documents/SIN - Project3/src/main/java/com/cvut/spatnjak/sin/teachus/service/AuthService.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1407183910607" ignored="false" />
     <file path="/GenericDao.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1407184007225" ignored="false" />
@@ -29,7 +29,7 @@
     <file path="/LatestMessagesBB.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1408390855071" ignored="false" />
     <file path="/index.xhtml" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1408478507412" ignored="false" />
     <file path="/table.css" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1407974939332" ignored="false" />
-    <file path="/MessageRestController.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1409401022526" ignored="false" />
+    <file path="/MessageRestController.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1409426654554" ignored="false" />
     <file path="/TimeRestController.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1408006380510" ignored="false" />
     <file path="/poll.xhtml" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1408397331567" ignored="false" />
     <file path="/fragment.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1408443839267" ignored="false" />
@@ -40,6 +40,7 @@
     <file path="/GCMRegistrationController.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1409342252059" ignored="false" />
     <file path="/GCMUtils.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1409400894679" ignored="false" />
     <file path="/GCMMessage.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1409401251371" ignored="false" />
+    <file path="/GCMService.java" changelist="4ae73c92-04b5-47ae-b85d-a931897e786a" time="1409427491849" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="367" selection-end="367" vertical-scroll-proportion="0.21338913">
+            <state line="6" column="18" selection-start="367" selection-end="367" vertical-scroll-proportion="0.23887588">
               <folding />
             </state>
           </provider>
@@ -112,18 +113,16 @@
       <file leaf-file-name="GCMUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/utils/GCMUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="39" selection-start="1513" selection-end="1529" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="40" column="32" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GCMMessage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/utils/GCMMessage.java">
+      <file leaf-file-name="GCMService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/GCMService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="47" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
+            <state line="56" column="8" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,18 +133,7 @@
       <file leaf-file-name="MessageRestController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/rest/MessageRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="24" selection-start="4957" selection-end="4957" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#4197#4213#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GCMRegistrationController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/rest/GCMRegistrationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="30" selection-start="1258" selection-end="1271" vertical-scroll-proportion="0.0">
+            <state line="135" column="26" selection-start="4391" selection-end="4391" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,22 +149,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/bo/ShortMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/ShortMessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/table.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/dto/ShortMessageDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/bo/AndroidDevice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/IAndroidDeviceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/AndroidDeviceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/rest/GCMRegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/dto/AndroidDeviceDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/utils/GCMMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/IGCMService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/IAndroidDeviceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/utils/GCMUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/rest/MessageRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/GCMService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/context/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -265,6 +253,114 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="REST_TEST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="properties" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="REST_TEST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="context" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="REST_TEST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="REST_TEST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,6 +418,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="REST_TEST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="REST_TEST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nuntius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -342,11 +498,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -375,6 +531,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -401,19 +570,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -588,7 +744,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1416" height="1020" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -610,8 +766,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19128509" sideWeight="0.599768" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40023202" sideWeight="0.59748894" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19128509" sideWeight="0.5406032" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45939675" sideWeight="0.59748894" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -684,70 +840,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/bo/ShortMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="32" selection-start="1068" selection-end="1151" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/bo/AndroidDevice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="33" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.55263156">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/dto/ShortMessageDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="48" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.55263156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/ShortMessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.18660288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/IShortMessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="27" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.6339713">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/dao/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="101" selection-start="2082" selection-end="2082" vertical-scroll-proportion="-0.7618469">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/dao/GenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="17" selection-start="856" selection-end="856" vertical-scroll-proportion="0.1944107">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/IAndroidDeviceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="34" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.55263156">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/dto/AndroidDeviceDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="41" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.3325359">
@@ -759,59 +851,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/AndroidDeviceService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/ganyo/gcm-server/1.0.2/gcm-server-1.0.2.jar!/com/google/android/gcm/server/Sender.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="35" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.41028708">
+        <state line="55" column="0" selection-start="3442" selection-end="3442" vertical-scroll-proportion="0.77483445" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/IAndroidDeviceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="4" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.8760736">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/rest/GCMRegistrationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/AndroidDeviceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="30" selection-start="1258" selection-end="1271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/ganyo/gcm-server/1.0.2/gcm-server-1.0.2.jar!/com/google/android/gcm/server/Sender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="3442" selection-end="3442" vertical-scroll-proportion="0.77483445">
-          <folding />
+        <state line="35" column="74" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.41028708">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/utils/GCMMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="47" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
+        <state line="46" column="47" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.55263156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/ShortMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="8" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.18660288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/utils/GCMUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="32" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/rest/GCMRegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="30" selection-start="1258" selection-end="1271" vertical-scroll-proportion="0.26794258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NUNTIUS.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/service/GCMService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="8" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/utils/GCMUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="39" selection-start="1513" selection-end="1529" vertical-scroll-proportion="0.0">
+        <state line="12" column="73" selection-start="822" selection-end="822" vertical-scroll-proportion="0.49156627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
+      <provider editor-type-id="com.intellij.jsf.ui.FacesConfigEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="47" selection-start="579" selection-end="579" vertical-scroll-proportion="0.49156627">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/context/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="807" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.31564987">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2609#2634#0" expanded="true" />
+            <element signature="e#2672#2685#0" expanded="true" />
+            <element signature="e#2728#2746#0" expanded="true" />
+            <element signature="e#2789#2807#0" expanded="true" />
+            <element signature="e#3273#3290#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kubaspatny/nuntius/rest/MessageRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="24" selection-start="4957" selection-end="4957" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#4197#4213#0" expanded="true" />
-          </folding>
+        <state line="135" column="26" selection-start="4391" selection-end="4391" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="367" selection-end="367" vertical-scroll-proportion="0.21338913">
+        <state line="6" column="18" selection-start="367" selection-end="367" vertical-scroll-proportion="0.23887588">
           <folding />
         </state>
       </provider>

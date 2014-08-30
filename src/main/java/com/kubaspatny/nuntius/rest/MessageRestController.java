@@ -2,6 +2,7 @@ package com.kubaspatny.nuntius.rest;
 
 import com.kubaspatny.nuntius.dto.AndroidDeviceDto;
 import com.kubaspatny.nuntius.dto.ShortMessageDto;
+import com.kubaspatny.nuntius.service.GCMService;
 import com.kubaspatny.nuntius.service.IAndroidDeviceService;
 import com.kubaspatny.nuntius.service.IShortMessageService;
 import com.kubaspatny.nuntius.utils.GCMMessage;
@@ -48,6 +49,9 @@ public class MessageRestController {
     @Autowired
     private IAndroidDeviceService androidDeviceService;
 
+    @Autowired
+    private GCMService gcmService;
+
     @RequestMapping(value = "/message/{id}", method = RequestMethod.GET, produces = "text/plain")
     public String getMessageById(@PathVariable String id) {
 
@@ -92,19 +96,6 @@ public class MessageRestController {
 
     }
 
-    @RequestMapping(value = "/message/new/{value}", method = RequestMethod.GET)
-    public String addMessage(@PathVariable String value) {
-
-        try {
-            if(value != null && shortMessageService != null) shortMessageService.add(value);
-        } catch (Exception e){
-            System.out.println(e.getLocalizedMessage());
-            return "500 Internal Server Error - Message couldn't be added.";
-        }
-
-        return "200 OK";
-    }
-
     //@RequestMapping(value = "/add", method = RequestMethod.POST)
     @RequestMapping(value = "/add")
     public ResponseEntity<String> add(@RequestParam(value="message", required=false, defaultValue="") String value) {
@@ -116,34 +107,16 @@ public class MessageRestController {
 
                 Long newMessageID = shortMessageService.add(value);
 
-                if(newMessageID == null) System.out.println("newMessageID == null"); // ************************************
-
                 // this should be done asynchronously via some listener for new message
                 ShortMessageDto m = shortMessageService.getById(newMessageID);
 
-                if(m == null) System.out.println("m == null"); // ************************************
-
                 Map<String, String> values = new HashMap<String, String>();
                 values.put("message", m.getmMessageBody());
-
-                if(values == null) System.out.println("values == null"); // ************************************
-
                 List<String> registrationIds = AndroidDeviceDto.getRegistrationIds(androidDeviceService.getAll());
 
-                if(registrationIds == null) System.out.println("registrationIds == null"); // ************************************
+                //GCMUtils.sendNotification(values, registrationIds);
+                gcmService.sendGCMNotification(values, registrationIds);
 
-                GCMUtils.sendNotification(values, registrationIds);
-
-//                GCMMessage message = new GCMMessage();
-//                message.addData("message", m.getmMessageBody());
-//
-//                for(String regID : registrationIds){
-//                    message.addRegId(regID);
-//                }
-
-//                GCMUtils.post(message);
-
-                // --------------------------------------------------------------------
 
             }
         } catch (Exception e){
@@ -155,6 +128,22 @@ public class MessageRestController {
         return new ResponseEntity<String>(HttpStatus.OK);
 
     }
+
+    @RequestMapping(value = "/test")
+    public ResponseEntity<String> test(){
+
+        System.out.println("Starting test.");
+        gcmService.doAsyncTask();
+        System.out.println("Ending test.");
+
+
+        return new ResponseEntity<String>(HttpStatus.OK);
+
+    }
+
+
+
+
 
 
 }

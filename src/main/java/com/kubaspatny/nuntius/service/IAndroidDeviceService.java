@@ -1,10 +1,7 @@
 package com.kubaspatny.nuntius.service;
-
 import com.kubaspatny.nuntius.dto.AndroidDeviceDto;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
-
 /**
  * Author: Kuba Spatny
  * Web: kubaspatny.cz
@@ -25,7 +22,6 @@ import java.util.List;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 @Transactional
 public interface IAndroidDeviceService {
 
