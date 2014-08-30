@@ -106,6 +106,8 @@
     <orderEntry type="library" name="Maven: org.jadira.usertype:usertype.core:3.0.0.CR1" level="project" />
     <orderEntry type="library" name="Maven: org.joda:joda-money:0.6" level="project" />
     <orderEntry type="library" name="Maven: org.jadira.usertype:usertype.spi:3.0.0.CR1" level="project" />
+    <orderEntry type="library" name="Maven: com.ganyo:gcm-server:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1" level="project" />
   </component>
 </module>
 

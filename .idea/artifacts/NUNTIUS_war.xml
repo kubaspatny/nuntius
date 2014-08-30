@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="NUNTIUS:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="NUNTIUS-1.0.92.war">
+    <root id="archive" name="NUNTIUS-1.0.105.war">
       <element id="artifact" artifact-name="NUNTIUS:war exploded" />
     </root>
   </artifact>

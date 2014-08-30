@@ -1,11 +1,19 @@
 package com.kubaspatny.nuntius.rest;
 
+import com.kubaspatny.nuntius.dto.AndroidDeviceDto;
 import com.kubaspatny.nuntius.dto.ShortMessageDto;
+import com.kubaspatny.nuntius.service.IAndroidDeviceService;
 import com.kubaspatny.nuntius.service.IShortMessageService;
+import com.kubaspatny.nuntius.utils.GCMMessage;
+import com.kubaspatny.nuntius.utils.GCMUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Author: Kuba Spatny
@@ -32,8 +40,13 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/msg")
 public class MessageRestController {
 
+    private final static String DEBUG_TAG = "MessageRestController";
+
     @Autowired
     private IShortMessageService shortMessageService;
+
+    @Autowired
+    private IAndroidDeviceService androidDeviceService;
 
     @RequestMapping(value = "/message/{id}", method = RequestMethod.GET, produces = "text/plain")
     public String getMessageById(@PathVariable String id) {
@@ -92,7 +105,8 @@ public class MessageRestController {
         return "200 OK";
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    //@RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/add")
     public ResponseEntity<String> add(@RequestParam(value="message", required=false, defaultValue="") String value) {
 
         try {
@@ -100,10 +114,41 @@ public class MessageRestController {
 
                 if(value.isEmpty()) return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
 
-                shortMessageService.add(value);
+                Long newMessageID = shortMessageService.add(value);
+
+                if(newMessageID == null) System.out.println("newMessageID == null"); // ************************************
+
+                // this should be done asynchronously via some listener for new message
+                ShortMessageDto m = shortMessageService.getById(newMessageID);
+
+                if(m == null) System.out.println("m == null"); // ************************************
+
+                Map<String, String> values = new HashMap<String, String>();
+                values.put("message", m.getmMessageBody());
+
+                if(values == null) System.out.println("values == null"); // ************************************
+
+                List<String> registrationIds = AndroidDeviceDto.getRegistrationIds(androidDeviceService.getAll());
+
+                if(registrationIds == null) System.out.println("registrationIds == null"); // ************************************
+
+                GCMUtils.sendNotification(values, registrationIds);
+
+//                GCMMessage message = new GCMMessage();
+//                message.addData("message", m.getmMessageBody());
+//
+//                for(String regID : registrationIds){
+//                    message.addRegId(regID);
+//                }
+
+//                GCMUtils.post(message);
+
+                // --------------------------------------------------------------------
+
             }
         } catch (Exception e){
-            System.out.println(e.getLocalizedMessage());
+            System.out.println(DEBUG_TAG + ":");
+            e.printStackTrace();
             return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 

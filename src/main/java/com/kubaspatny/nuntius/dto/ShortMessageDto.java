@@ -70,6 +70,7 @@ public class ShortMessageDto extends AbstractDto {
 
     public static List<ShortMessageDto> convert(List<ShortMessage> messages){
         List<ShortMessageDto> messageDtos = new ArrayList<ShortMessageDto>();
+        if(messages == null) return messageDtos;
         for(ShortMessage m : messages){
             messageDtos.add(ShortMessageDto.convert(m));
         }

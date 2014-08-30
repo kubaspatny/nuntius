@@ -4,7 +4,7 @@
   <groupId>com.kubaspatny.nuntius</groupId>
   <artifactId>NUNTIUS</artifactId>
   <packaging>war</packaging>
-  <version>1.0.92</version>
+  <version>1.0.105</version>
   <name>NUNTIUS Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
@@ -243,6 +243,12 @@
             <groupId>org.jadira.usertype</groupId>
             <artifactId>usertype.core</artifactId>
             <version>3.0.0.CR1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ganyo</groupId>
+            <artifactId>gcm-server</artifactId>
+            <version>1.0.2</version>
         </dependency>
 
     </dependencies>
