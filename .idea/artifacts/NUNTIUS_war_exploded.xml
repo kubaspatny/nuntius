@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="NUNTIUS:war exploded">
-    <output-path>$PROJECT_DIR$/target/NUNTIUS-1.0.111</output-path>
+    <output-path>$PROJECT_DIR$/target/NUNTIUS-1.0.127</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="NUNTIUS/web/Web" />
       <element id="directory" name="WEB-INF">
@@ -59,6 +59,8 @@
           <element id="library" level="project" name="Maven: org.jadira.usertype:usertype.spi:3.0.0.CR1" />
           <element id="library" level="project" name="Maven: com.ganyo:gcm-server:1.0.2" />
           <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
         </element>
       </element>
     </root>

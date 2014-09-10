@@ -96,6 +96,27 @@ public class MessageRestController {
 
     }
 
+    @RequestMapping(value = "/latest", method = RequestMethod.GET, produces = "application/json")
+    public List<ShortMessageDto> getLatestMessages() {
+
+
+        try  {
+
+            List<ShortMessageDto> messages = shortMessageService.getLatest10();
+
+            if(messages != null){
+                return messages;
+            }
+
+        } catch (Exception e){
+            // log message
+            return null;
+        }
+
+        return null;
+
+    }
+
     //@RequestMapping(value = "/add", method = RequestMethod.POST)
     @RequestMapping(value = "/add")
     public ResponseEntity<String> add(@RequestParam(value="message", required=false, defaultValue="") String value) {

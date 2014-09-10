@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <h:outputStylesheet library="css" name="table.css"  />
+    <title>Nuntius</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'/>
+</h:head>
+<h:body>
+
+    <!--<nav>-->
+        <!--<ul class="left">-->
+            <!--<li><a href="#" id="logo">Nuntius</a></li>-->
+        <!--</ul>-->
+        <!--<ul class="right">-->
+            <!--<li><a href="#">HOME</a></li>&lt;!&ndash;-->
+      <!--&ndash;&gt;<li><a href="#">SEND MESSAGE</a></li>&lt;!&ndash;-->
+      <!--&ndash;&gt;<li><a href="#">CONTACT</a></li>&lt;!&ndash;-->
+      <!--&ndash;&gt;<li><a href="#">ABOUT</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
+
+    <nav>
+        <ul class="left">
+            <h:form>
+                <li><h:commandLink action="#{navigationController.goHome}" value="Nuntius" styleClass="logo"/></li>
+            </h:form>
+        </ul>
+
+        <ul class="right">
+            <h:form>
+                <li><h:commandLink action="#{navigationController.goHome}" value="HOME"/></li>
+                <li><h:commandLink action="#{navigationController.goSend}" value="SEND MESSAGE"/></li>
+                <li><h:commandLink action="#{navigationController.goContact}" value="CONTACT"/></li>
+                <li><h:commandLink action="#{navigationController.goAbout}" value="ABOUT"/></li>
+            </h:form>
+        </ul>
+    </nav>
+
+    <!--<center>-->
+    <!--<h:form>-->
+        <!--<h:outputLabel for="text">Message text:</h:outputLabel>-->
+        <!--<h:inputText id="text" value="{sendMessagesBB.text}"/>-->
+        <!--<h:commandButton id="button" action="{sendMessagesBB.sendMessage}" value="Send"/>-->
+    <!--</h:form>-->
+    <!--</center>-->
+
+    <table class="flatTable">
+        <thead>
+            <tr><th class="headingTr" colspan="3" scope="colgroup">SEND MESSAGE</th></tr>
+        </thead>
+        <tbody>
+            <tr class="order-table-odd-row">
+                <h:form>
+                    <td><h:inputText id="text" value="#{sendMessagesBB.text}" styleClass="sendMessageInput"/></td>
+                    <td><h:commandButton id="button" action="#{sendMessagesBB.sendMessage}" value="Send" styleClass="sendMessageButton"/></td>
+                </h:form>
+            </tr>
+        </tbody>
+    </table>
+
+
+</h:body>
+</html>

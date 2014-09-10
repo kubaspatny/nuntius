@@ -4,7 +4,7 @@
   <groupId>com.kubaspatny.nuntius</groupId>
   <artifactId>NUNTIUS</artifactId>
   <packaging>war</packaging>
-  <version>1.0.111</version>
+  <version>1.0.127</version>
   <name>NUNTIUS Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
@@ -249,6 +249,12 @@
             <groupId>com.ganyo</groupId>
             <artifactId>gcm-server</artifactId>
             <version>1.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
         </dependency>
 
     </dependencies>

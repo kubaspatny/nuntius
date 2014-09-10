@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <h:outputStylesheet library="css" name="table.css"  />
+    <title>Nuntius</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'/>
+</h:head>
+<h:body>
+
+    <nav>
+        <ul class="left">
+            <h:form>
+                <li><h:commandLink action="#{navigationController.goHome}" value="Nuntius" styleClass="logo"/></li>
+            </h:form>
+        </ul>
+
+        <ul class="right">
+            <h:form>
+                <li><h:commandLink action="#{navigationController.goHome}" value="HOME"/></li>
+                <li><h:commandLink action="#{navigationController.goSend}" value="SEND MESSAGE"/></li>
+                <li><h:commandLink action="#{navigationController.goContact}" value="CONTACT"/></li>
+                <li><h:commandLink action="#{navigationController.goAbout}" value="ABOUT"/></li>
+            </h:form>
+        </ul>
+    </nav>
+
+
+    <!-- Ccntact form -->
+
+    <div class="page-container">
+
+        <h:form styleClass="contact-us">
+            <h1>Contact Us!</h1>
+            <br/>
+
+            <p class="label">Name</p>
+            <h:inputText styleClass="name" value="#{contactBB.name}"/>
+
+            <p class="label">Email</p>
+            <h:inputText styleClass="email" value="#{contactBB.email}"/>
+
+            <p class="label">Subject</p>
+            <h:inputText styleClass="subject" value="#{contactBB.subject}"/>
+
+            <p class="label">Message</p>
+            <h:inputTextarea styleClass="message" value="#{contactBB.text}"/>
+
+            <h:commandButton value="Send Message" styleClass="contactButton" action="#{contactBB.sendEmail}"/>
+        </h:form>
+
+    </div>
+
+
+</h:body>
+</html>
